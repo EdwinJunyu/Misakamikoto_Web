@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .topic{
+            z-index: 99;
+            width: 100%;
+            top: 18px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(74, 186, 220);
+            position: fixed;
+            margin: 0px;
+        }
+        .top-bar{
+            height: 80px;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            background-color: rgb(178, 141, 125);
+            position: fixed;
+            z-index: 0;            
+        }
+        .side-bar{
+            background-color: rgb(236, 214, 204);
+            top: 80px;
+            bottom: 0px;
+            left: 0px;
+            width: 60px;
+            position: fixed;
+        }
+        .first{
+            font-family: 'Yuji Mai';
+            font-size: larger;
+            display: block;
+            margin-left: 60px;
+            margin-top: 100px;
+            background-color: azure;
+            text-align: center;
+            z-index: -50;
+            position: relative;
+        }
+
+        .hr1 {
+            margin: 10px 0 12px 0;
+            height: 4px;
+            border: 0;
+            background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
+        }
+        .introduction{
+            width: 100%;
+        }
+        .introduction-picture{
+            margin-left: 65px;
+            vertical-align: top;
+            width: 60%;
+        }
+
+        .introduction-paragraph{
+            font-size: x-large;
+            width: 40%;
+            float: right;
+        }
+        .video1{
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 65px;
+            object-fit: contain;
+        }
+
+        .hr2{
+            display: block;
+            margin: 10px 0 12px 0;
+            height: 4px;
+            border: 0;
+            background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);   
+        }  
+    </style>
+</head>
+<body style="width: 100%; min-width: 1200px;">
+    <div> <p class="topic">御坂美琴</p></div>
+    <div class="top-bar"></div>
+    <div class="side-bar"></div>
+    <div class="放音乐"></div>
+    <p class="first">君の指先を舞ってる電光は、私の一生変わらない信仰であり、このレールガンだけが永遠！</p>
+    <hr class="hr1">     <!--头像上的间隔线-->
+    <div class="introduction">
+        <div class="introduction-picture">
+            <img src="/Users/win/Desktop/小项目/御坂美琴/1.jpg" height="400px", width="400px">
+        <div class="introduction-paragraph">
+            <p>
+                &bull;学园都市中仅有的七名超能力者(Level 5)中排名第三位,学园都市最强电击使
+                <br>&bull;贵族女校常盘台中学二年级学生，有“常盘台的王牌”和“最强无敌的电击公主”之称。性格好胜、正义感强，有着男孩子般的爽朗性格，但是却没有耐心。
+            </p>
+        </div>
+    </div>
+    <hr class="hr2">     <!--头像下的间隔线--> 
+    <video class="video1" controls="play">
+        <source src="/Users/win/Desktop/小项目/背景视频.mp4">
+    </video> 
+
+</body>
+</html>
