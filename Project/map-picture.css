@@ -1,0 +1,9 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    background-color: rgb(220, 209, 201);
+}
+.map-picture{
+    width: 650px;
+}

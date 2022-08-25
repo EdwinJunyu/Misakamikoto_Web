@@ -4,162 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map</title> 
-    <style>  
-        .map-picture{
-            position: absolute;
-            z-index: 1;
-        }
-        .first-area{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 380px;
-            left: 500px;
-        }
-        .qv-16{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 180px;
-            left: 450px;
-        }
-        .qv-3{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: -180px;
-            left: 500px;
-        }
-        .qv-13{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 520px;
-            left: 130px;
-        }
-        .qv-14{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: -150px;
-            left: 680px;
-        }
-        .qv-20{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 30px;
-            left: 250px;
-        }
-        .qv-4{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 280px;
-            left: 680px;
-        }
-        .qv-6{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 380px;
-            left: 800px;
-        }
-        .qv-5{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 360px;
-            left: 550px;
-        }
-
-        .qv-23{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 480px;
-            left: 800px;
-        }
-        
-        .qv-18{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 500px;
-            left: 650px;
-        }
-        .qv-7{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 450px;
-            left: 400px;
-        }
-
-        .qv-2{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 900px;
-            left: 300px;
-        }
-        .qv-10{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 900px;
-            left: 500px;
-        }
-        .qv-11{
-            background-color: rgb(22, 186, 223);
-            width: 100px;
-            position: relative;
-            z-index: 2;
-            top: 920px;
-            left: 750px;
-        }
-    </style>
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="../Project/map-picture.css">
 </head>
 <body>
     <div class="go-to-home"> 
-        <a href="/Users/win/Desktop/小项目/Project/Home.html" target="_self">回到主页</a>
+        <a href="../Project/Home.html" target="_self">回到主页</a>
     </div>
-    
-    <div class="map-picture"><img src="/Users/win/Desktop/小项目/学园都市地图.png"> </div>
+   
+    <div class="main"> 
+        <div class="left"><img class="map-picture" src="../Project/material/学园都市地图.png"></div>
+        <div class="middle">
+            <p class="introduction">
+                第一学区：
+            <br>以行政机关为主的学区，感受不到其他学区所拥有的生活气息。
+            <br>
+            <br>第二学区：
+            <br>重工业色彩强烈的学区。
+                爆炸物或武器的试验场、警备员和风纪委员的训练所所在的学区。
+                第二学区是机密最多的学区。
+                学区周围环绕着高耸的隔音墙，而且这地方还拥有能发射逆相位音波来消除噪音的设备
+            <br>
+            <br>第三学区：
+            <br>第三学区内有许多对外设施，有好几间国际展示场，饭店的档次在学园都市内也是数一数二。
+                基于不让机场噪音影响住宿设施的考虑，学园都市特地将迎宾设施安排在距离机场集中的第二十三学区很远的第三学区，
+                作为对外门户的第二十三学区里有铁道直通第三学区
+            <br>
+            <br>第七学区＜学校相关＞
+            <ul>
+                <li>某高中(当麻所在学校)</li>
+                <li>学舍之园</li>
+                <li>常盘台中学(美琴所在学校)</li>
+                <li>枝垂樱学园</li>
+                <li>栅川中学</li>
+                <li>常盘台中学学生寮</li>
+            </ul>
+                警备员第七学区本部
+            <br>风纪委员第一七七支部
+            <br>水穗机构病理解析研究所
+            <br>S制药公司脑神经应用分析所
+            <br>
+        
 
-    <div class="first-area">  
-        <a href="/Users/win/Desktop/小项目/Project/map-info1.html">1区的链接</a>
+                
+
+            </p>
+        </div>
+        <div class="right">
+            <P>
+                
+            <br>第十学区：
+            <br>第十学区在学园都市中，以地价最便宜，治安也最糟糕而闻名。
+                因为这里地价便宜，所以充满各种“其他学区敬而远之”的设施，是个核能、细菌研究设施以及实验动物焚化场林立的学区。
+                学园都市唯一的墓地和少年感化院就坐落在这个学区。
+                <br>其他学区：
+                <br>
+            </P>
+
+        </div>
+        
     </div>
 
-    <div class="qv-2">2区</div>
-    <div class="qv-10">10区</div>
-    <div class="qv-11">11区</div>
-    <div class="qv-16">16区</div>
-    <div class="qv-4">4区</div>
-    <div class="qv-6">6区</div>
-    <div class="qv-23">23区</div>
-    <div class="qv-18">18区</div>
-    <div class="qv-7">7区</div>
-    <div class="qv-5">5区</div>
-    <div class="qv-20">20区</div>
-    <div class="qv-3">3区</div>
-    <div class="qv-14">14区</div>
-    <div class="qv-13">13区</div>
+
 
 
 </body>
