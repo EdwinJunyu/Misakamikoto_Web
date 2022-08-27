@@ -1,9 +1,15 @@
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     background-color: rgb(220, 209, 201);
 }
 .map-picture{
     width: 650px;
+}
+.hr1 {
+    margin: 10px 0 12px 0;
+    height: 4px;
+    border: 0;
+    background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
 }
