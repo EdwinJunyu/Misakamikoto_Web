@@ -1,0 +1,84 @@
+.topic{
+    z-index: 99;
+    width: 100%;
+    top: 18px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(236, 214, 204);
+    position: fixed;
+    margin: 0px;
+}
+.go-to-picture{
+    z-index: 99;
+    position: fixed;
+    top: 18px;
+    
+}
+.go-to-map{
+    z-index: 99;
+    position: fixed;
+    top: 50px;
+}
+.top-bar{
+    height: 80px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(178, 141, 125);
+    position: fixed;
+    z-index: 0;   
+}
+.side-bar{
+    background-color: rgb(236, 214, 204);
+    top: 80px;
+    bottom: 0px;
+    left: 0px;
+    width: 60px;
+    position: fixed;
+}
+.first{
+    font-family: 'Yuji Mai';
+    font-size: larger;
+    display: block;
+    margin-left: 60px;
+    margin-top: 100px;
+    background-color: azure;
+    text-align: center;
+    z-index: -50;
+    position: relative;
+}
+
+.hr1 {
+    margin: 10px 0 12px 0;
+    height: 4px;
+    border: 0;
+    background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
+}
+.introduction{
+    width: 100%;
+}
+.introduction-picture{
+    margin-left: 65px;
+    vertical-align: top;
+    width: 60%;
+}
+
+.introduction-paragraph{
+    font-size: x-large;
+    width: 40%;
+    float: right;
+}
+.video1{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 65px;
+    object-fit: contain;
+}
+
+.hr2{
+    display: block;
+    margin: 10px 0 12px 0;
+    height: 4px;
+    border: 0;
+    background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);   
+} 

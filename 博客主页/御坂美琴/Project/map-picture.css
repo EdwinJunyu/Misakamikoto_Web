@@ -1,0 +1,67 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    background-color: rgb(220, 209, 201);
+}
+.map-picture{
+    width: 650px;
+}
+.hr1 {
+    margin: 10px 0 12px 0;
+    height: 4px;
+    border: 0;
+    background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
+}
+
+/* 叉叉图案按钮*/
+
+.button {
+    /* Reset */
+    background-color: transparent;
+    border-color: transparent;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Size */
+    height: 32px;
+    width: 32px;
+
+    /* Used to position the inner */
+    position: absolute; /*这里我把它改成了absolute原本是relative*/
+}
+
+.button__line {
+    /* Background color */
+    background-color: rgba(0, 0, 0, 0.3);
+
+    /* Position */
+    position: absolute;
+
+    /* Size */
+    height: 1px;
+    width: 100%;
+}
+
+.button__line--first {
+    /* Position */
+    left: 0px;
+    top: 50%;
+    transform: translate(0%, -50%) rotate(45deg);
+
+    /* Size */
+    height: 1px;
+    width: 100%;
+}
+
+.button__line--second {
+    /* Position */
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, 0%) rotate(45deg);
+
+    /* Size */
+    height: 100%;
+    width: 1px;
+}
