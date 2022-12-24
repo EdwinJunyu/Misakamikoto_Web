@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  padding: 10vh;
+  background: linear-gradient(-25deg, lightblue, transparent), linear-gradient(to top, azure, AliceBlue);
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  font-size: 10vh;
+  line-height: 11.42vh;
+  letter-spacing: -0.1em;
+  min-width: 7.5em;
+}
+
+li {
+  display: inline-block;
+  text-shadow: 0 0 .5em green;
+}
+
+.shine {
+  text-shadow: 0 0 1em gold;
+}
+
+.trunk {
+  transform: rotate(45deg);
+  text-shadow: 0 0 1em brown;
+}
+
+#snowflakeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+}
+
+.snowflake {
+  position: fixed;
+  background: none;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  width: 0.1em;
+  height: 0.1em;
+  font-size: 0.45em;
+  color: #fff;
+  text-shadow: 0 0 20px CornflowerBlue;
+}
+
+.follow {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #1DA1F2;
+}
+
+.follow:hover {
+  text-decoration: underline;
+  color: #14171A;
+}
+
+.follow svg {
+  height: 1em;
+  margin-right: .1em;
+}
+.main{
+  text-align: center;
+}
