@@ -5,44 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>活动展示</title>
-    <!--Python 插件 <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>-->
+    <style>
+        .title {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+          background-color: rgb(12, 142, 193);
+          margin-bottom: 5px;
+        }
+        
+        .title > div {
+          margin: 5px;
+        }
+        
+        .title > div img {
+          margin-top: 5px;
+          width: 100%;
+          height: auto;
+        }
+        
+        @media screen and (min-width: 768px) {
+          .title > div {
+            flex-basis: 50%;
+          }
+        }
+        
+        @media screen and (min-width: 1000px) {
+          .title > div {
+            flex-basis: 33.33%;
+          }
+        }
+
+        #loading-screen {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #fff;
+         z-index: 9999;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        }
+
+        #loading-animation {
+         width: 50px;
+         height: 50px;
+         border: 5px solid #ccc;
+         border-top-color: #f0f;
+         border-radius: 50%;
+         animation: spin 1s infinite linear;
+    }
+
+        @keyframes spin {
+            to {
+        transform: rotate(360deg);
+    }
+}
+
+        </style>
 </head>
 <body>
-    <p style="text-align: center; font-size: 50px; background-color: rgb(112, 222, 114); margin: 0px;">活动经历</p>
-    <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
-    <p style="text-align: center; font-size: 30px; background-color: rgb(20, 159, 214); margin: 0px;">参加过的活动</p>
-    <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
-    <div class="title" style="display: flex; flex-direction: row; flex-wrap: wrap; text-align: center; background-color: rgb(12, 142, 193);">
-        <div class="1" style="width: 50%;text-align: center;"><img src="../博客主页/img/AMC12 参与证书.png" style="margin-top: 5px;"></div>
-        <div class="2" style="width: 50%;text-align: center;"><img src="../博客主页/img//AIME 参与证书.png" style="margin-top: 5px;"></div>
-        <div class="3" style="width: 33.33%;"><img src="../博客主页/img/NAQT参与.png" style="margin-top: 5px;"></div>
-        <div class="4" style="width: 33.33%;"><img src="../博客主页/img/NEC参与.png" style="margin-top: 5px;"></div>
-        <div class="5" style="width: 33.33%;"><img src="../博客主页/img/IEO-铜奖.png" style="margin-top: 5px;"></div>
+    <div id="loading-overlay">
+        <div id="loading-spinner"></div>
+      </div>     
+    <div id="loading-page" style="display: none;">
+        <div id="loading-message">Loading...</div>
+      </div>
+      <div id="main-page" style="display: none;">
+      </div>  
+        <p style="text-align: center; font-size: 50px; background-color: rgb(112, 222, 114); margin: 0px;">活动经历</p>
+        <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
+        <p style="text-align: center; font-size: 30px; background-color: rgb(20, 159, 214); margin: 0px;">参加过的活动/奖项</p>
+        <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
         
-        
-    </div>
-    <div class="title" style="display: flex; flex-direction: row; flex-wrap: wrap;text-align: center; background-color: rgb(12, 142, 193);">
-        <div class="3" style="width: 50%; text-align: center;"><img src="../博客主页/img/ACSL中级组参与证书.JPG" height="567px"></div>
-        <div class="3" style="width: 50%; text-align: center;"><img src="../博客主页/img/BPA参与.png"></div>
-    </div>
-    <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
-    <p style="text-align: center; font-size: 30px; background-color: rgb(20, 159, 214); margin: 0px;">获得的奖状</p>
-    <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
-    <div class="title" style="display: flex; flex-direction: row; flex-wrap: wrap; text-align: center; background-color: rgb(12, 142, 193);">
-        <div class="1" style="text-align: center; width: 33.33%;"><img src="../博客主页/img/NAQT 超级选手-银.png" style="margin-top: 5px;"></div>
-        <div class="2" style="text-align: center; width: 33.33%;"><img src="../博客主页/img/NAQT 奋进队伍奖.png" style="margin-top: 5px;"></div>
-        <div class="3" style="text-align: center; width: 33.33%;"><img src="../博客主页/img/NAQT奋进选手奖.png" style="margin-top: 5px;"></div>
-        <div class="4" style="text-align: center; width: 33.33%;"><img src="../博客主页/img/BPA S_陈均裕_个人单科优胜奖-国际贸易与全球经济.png" style="margin-top: 5px;"></div>
-        <div class="5" style="text-align: center; width: 33.33%;"><img src="../博客主页/img/BPA S_陈均裕_个人单科优胜奖-金融投资.png" style="margin-top: 5px;"></div>
-        <div class="6" style="text-align: center; width: 33.33%;"><img src="../博客主页/img/BPA S_陈均裕_个人单科优胜奖-微观及宏观经济.png" style="margin-top: 5px;"></div>
-        <div class="7" style="text-align: center; width: 50%;"><img src="../博客主页/img/ACSL最后一轮参与证书.JPG"  style="margin-top: 5px; height: 567px;" ></div> 
-        <div class="9" style="text-align: center; width: 50%;"><img src="../博客主页/img/IEO-铜奖.png"></div> 
-        <div class="8" style="text-align: center; width: 100%;"><img src="../博客主页/img/AMC12 优秀奖.png" width="650px"></div>
-    </div>
-    <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
-    <div class="go-to-home" style="background-color: rgb(112, 222, 114); text-align: right;">
-        <a href="../index.html" style="text-decoration: none;"><p style="font-size: 25px; color: white; margin-top: 5px;">回到主页</p></a>
-    </div>
+<div class="title">
+    <div class="AMC12 参与证书.png"><img src="../博客主页/img/AMC12 参与证书.png"></div>
+    <div class="AIME 参与证书.png"><img src="../博客主页/img//AIME 参与证书.png"></div>
+    <div class="NAQT参与.png"><img src="../博客主页/img/NAQT参与.png"></div>
+    <div class="NEC参与.png"><img src="../博客主页/img/NEC参与.png"></div>
+    <div class="IEO-铜奖.png"><img src="../博客主页/img/IEO-铜奖.png"></div>
+    <div class="ACSL中级组参与证书.JPG"><img src="../博客主页/img/ACSL中级组参与证书.JPG"></div>
+    <div class="BPA参与.png"><img src="../博客主页/img/BPA参与.png"></div>
+    <div class="NAQT 超级选手-银.png"><img src="../博客主页/img/NAQT 超级选手-银.png"></div>
+    <div class="NAQT 奋进队伍奖.png"><img src="../博客主页/img/NAQT 奋进队伍奖.png"></div>
+    <div class="NAQT奋进选手奖.png"><img src="../博客主页/img/NAQT奋进选手奖.png"></div>
+    <div class="BPA 个人单科优胜奖-国际贸易与全球经济.png"><img src="../博客主页/img/BPA S_陈均裕_个人单科优胜奖-国际贸易与全球经济.png"></div>
+    <div class="BPA 个人单科优胜奖-金融投资.png"><img src="../博客主页/img/BPA S_陈均裕_个人单科优胜奖-金融投资.png"></div>
+    <div class="BPA 个人单科优胜奖-微观及宏观经济.png"><img src="../博客主页/img/BPA S_陈均裕_个人单科优胜奖-微观及宏观经济.png"></div>
+    <div class="ACSL最后一轮参与证书.JPG"><img src="../博客主页/img/ACSL最后一轮参与证书.JPG"></div>
+    <div class="IEO-铜奖.png"><img src="../博客主页/img/IEO-铜奖.png"></div>
+    <div class="AMC12 优秀奖.png"><img src="../博客主页/img/AMC12 优秀奖.png"></div>
+  </div>
+        <hr style="margin: 10px 0 12px 0; height: 4px; border: 0; background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);">
+        <div class="go-to-home" style="background-color: rgb(112, 222, 114); text-align: right;">
+            <a href="../index.html" style="text-decoration: none;"><p style="font-size: 25px; color: white; margin-top: 5px;">回到主页</p></a>
+        </div>
+        <script>
+            window.addEventListener("load", function () {
+            var loadingOverlay = document.getElementById("loading-overlay");
+            loadingOverlay.style.display = "none";
+            alert('加载完毕');
+            });
+        </script>
 </body>
 </html>
